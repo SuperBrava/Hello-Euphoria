@@ -50,6 +50,11 @@ h2{
   width: 75%;
 }
 
+.audioplayer{
+  border: 2px solid $font-primary;
+  border-bottom: 2px solid $font-primary;
+}
+
 .subheading{
  width: 320px;
  margin: 10px;
@@ -67,6 +72,7 @@ h2{
 }
 
 footer{
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -78,7 +84,8 @@ footer{
   background: transparent, no-repeat center;
   text-align: center;
      li {
-       color: rgba($font-light, 0.8);
+       text-decoration: none;
+       color: rgba($font-light, 1);
        font-size: 8vh;
        display: inline-block;
        border: none;
@@ -98,4 +105,14 @@ footer{
 
 .social:hover > li:hover {
   opacity: 1;
+}
+
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: $font-primary;
+}
+a:hover {
+      color: $font-primary;
 }
