@@ -16,9 +16,8 @@ h1, h2{
    line-height: 7vh;
 }
 
-
 h2{
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .bg {
@@ -34,11 +33,12 @@ h2{
   margin: auto;
 }
 .main-logo{
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  padding-left: 8%;
-  width: 50%;
-}
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 6%;
+  width: 35%;
+  }
+
 .body-section{
   display: flex;
   flex-direction: row;
@@ -46,12 +46,16 @@ h2{
   justify-content: center;
   align-items: center;
   margin: auto;
+  width: 75%;
 }
 
 .subheading{
- width: 40%;
- flex-basis: 320px;
-}
+ width: 320px;
+ margin: 10px;
+ border: 2px solid $font-primary;
+ border-radius: 12px;
+ padding: 0em 0.2em 0.3em 0.2em;
+ }
 
 .bc-icon, .blogger-icon{
   max-height: 8vh;
@@ -62,11 +66,16 @@ h2{
 }
 
 footer{
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: auto;
+  width: 700px;
+  margin-bottom: 25px;
+  border: 2px solid $font-primary;
+  border-radius: 12px;
   background: transparent, no-repeat center;
   text-align: center;
-  width: 100%;
      li {
        color: rgba($font-light, 0.8);
        font-size: 8vh;
