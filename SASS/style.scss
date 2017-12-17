@@ -1,23 +1,39 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 $header-bg-primary: #9B9B9B;
-$font-primary: #505050;
+$font-header: #E2E2E2;
+$font-primary: #E2E2E2;
 $font-light: #E2E2E2;
 
 html {
+    height: 100vh;
     box-sizing: border-box;
     font-family: 'Montserrat', Arial, sans-serif;
 }
 
+h1, h2{
+   color: $font-primary;
+   text-align: center;
+}
 h1 {
-    color: $font-primary;
-    font-size: 6vw;
+   font-size: 12vh;
 }
 
-html,
-body {
-    margin: 0;
-    padding: 0;
+h2{
+  font-size: 6vh;
+}
+
+.bg {
+      height: 100vh;
+      background-image: url("background3.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+}
+
+.audioplayer{
+display: flex;
+margin: auto;
 }
 
 footer{
@@ -25,10 +41,6 @@ footer{
   margin: auto;
   background: transparent, no-repeat center;
   text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 900;
   width: 100%;
      li {
        font-size: 75px;
@@ -39,7 +51,7 @@ footer{
        margin: 20px;
        transition: ease 0.4s;
          &:hover {
-           color: rgba(lighten($font-light, 100%),1);
+           color: rgba(lighten($font-primary, 100%),1);
            box-shadow: 5px white;
       }
     }
