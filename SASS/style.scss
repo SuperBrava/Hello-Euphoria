@@ -16,20 +16,17 @@ h1, h2{
    line-height: 7vh;
 }
 
-h1 {
-   font-size: 12.5vh;
-}
 
 h2{
-  font-size: 6vh;
+  font-size: 3em;
 }
 
 .bg {
-      height: 100vh;
-      background-image: url("img/background3.jpeg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
+  height: 100vh;
+  background-image: url("img/background3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .main-logo, .audioplayer{
@@ -41,6 +38,19 @@ h2{
   padding-bottom: 1rem;
   padding-left: 8%;
   width: 50%;
+}
+.body-section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.subheading{
+ width: 40%;
+ flex-basis: 320px;
 }
 
 .bc-icon, .blogger-icon{
