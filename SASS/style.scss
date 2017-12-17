@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 $header-bg-primary: #9B9B9B;
-$font-header: #E2E2E2;
 $font-primary: #E2E2E2;
 $font-light: #E2E2E2;
 
@@ -14,9 +13,11 @@ html {
 h1, h2{
    color: $font-primary;
    text-align: center;
+   line-height: 7vh;
 }
+
 h1 {
-   font-size: 12vh;
+   font-size: 12.5vh;
 }
 
 h2{
@@ -25,15 +26,29 @@ h2{
 
 .bg {
       height: 100vh;
-      background-image: url("background3.jpeg");
+      background-image: url("img/background3.jpeg");
       background-repeat: no-repeat;
       background-size: cover;
       background-attachment: fixed;
 }
 
-.audioplayer{
-display: flex;
-margin: auto;
+.main-logo, .audioplayer{
+  display: flex;
+  margin: auto;
+}
+.main-logo{
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 8%;
+  width: 50%;
+}
+
+.bc-icon, .blogger-icon{
+  max-height: 8vh;
+  vertical-align: middle;
+  border: 2px solid $font-primary;
+  border-radius: 12px;
+  background-color: white;
 }
 
 footer{
@@ -43,8 +58,8 @@ footer{
   text-align: center;
   width: 100%;
      li {
-       font-size: 75px;
        color: rgba($font-light, 0.8);
+       font-size: 8vh;
        display: inline-block;
        border: none;
        cursor: pointer;
