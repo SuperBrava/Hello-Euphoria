@@ -22,6 +22,8 @@ h2{
 }
 
 .bg {
+  margin-left: 10%;
+  margin-right: 10%;
   height: 100vh;
   background-image: url("img/background3.jpeg");
   background-repeat: no-repeat;
@@ -59,7 +61,6 @@ h2{
  width: 320px;
  margin: 10px;
  border-top: 2px solid $font-primary;
- border-bottom: 2px solid $font-primary;
  padding: 0em 0.2em 0.3em 0.2em;
  }
 
@@ -80,7 +81,7 @@ footer{
   width: 700px;
   margin-bottom: 25px;
   border-top: 2px solid $font-primary;
-  border-bottom:2px solid $font-primary;
+
   background: transparent, no-repeat center;
   text-align: center;
      li {
