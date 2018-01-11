@@ -8,7 +8,7 @@ html {
     height: 100%;
     box-sizing: border-box;
     font-family: 'Montserrat', Arial, sans-serif;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 
@@ -30,34 +30,49 @@ h2{
   background-attachment: fixed;
 }
 
-.logo{
+
+.upper-container{
+  margin: 60px auto 0px;
+  height:50%;
+  width: 100%;
   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.logo{
+  padding: 10% 0;
   margin: auto;
-  width: 65%;
+  font-size: 12vw;
+}
+
+.lower-container{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  padding: 0px 0px 30px;
 }
 
 .audioplayer-container{
-  margin-top: -40px;
-  margin-bottom: 15px;
- text-align: center;
+  margin: auto;
+  text-align: center;
 iframe{
   width: 400px;
   margin: 0 auto;
 }}
 
-
 .break{
  width: 500px;
- margin: auto;
+ margin: 40px auto;
  border-top: 2px solid $font-primary;
- padding-top: 10px;
 }
 
-.subheading{
+.subheading {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .bc-icon{
