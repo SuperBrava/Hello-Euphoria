@@ -11,7 +11,6 @@ html {
     overflow: hidden;
 }
 
-
 h1, h2{
    color: $font-primary;
    text-align: center;
@@ -28,6 +27,7 @@ h2{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: right;
 }
 
 
@@ -43,7 +43,10 @@ h2{
 .logo{
   padding: 10% 0;
   margin: auto;
-  font-size: 12vw;
+  line-height: 120px;
+  font-size: calc(120px + (180 - 120) * ((100vw - 300px) / (1600 - 300)));
+  /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) *
+  ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
 }
 
 .lower-container{
@@ -56,10 +59,11 @@ h2{
 .audioplayer-container{
   margin: auto;
   text-align: center;
-iframe{
-  width: 400px;
-  margin: 0 auto;
-}}
+    iframe{
+      max-width: 600px;
+      min-width: 400px;
+      margin: 0 auto;
+    }}
 
 .break{
  width: 500px;
@@ -92,9 +96,10 @@ iframe{
   text-align: center;
 }
 .social-icon-container{
-  display: inline-block;
+  display: inline;
 }
 
 .icon{
-
+  max-width: 11vw;
+  min-width: 80px;
 }
